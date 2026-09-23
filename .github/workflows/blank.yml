@@ -4,8 +4,8 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls
-      - run: hostname
-      - run: df -h
-      - run: echo "welcome"
+      - name: system-info
+        run: |
+          date
+          hostname
+          df -h
