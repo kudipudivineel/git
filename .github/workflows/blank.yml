@@ -1,8 +1,11 @@
 name: vineel
-on : workflow_dispatch
+on : push
 jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-      - name: build success
-        run: echo "print workflow is success"
+      - run: pwd
+      - run: ls
+      - run: hostname
+      - run: df -h
+      - run: echo "welcome"
